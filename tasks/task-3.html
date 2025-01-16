@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive</title>
-</head>
-<body>
+    <style>
+      body {
+        max-width: 1440px;
+      }
+      img {
+        width: 100%;
+        margin: 0px auto;
+      }
+      @media screen and (max-width: 1024px) and (min-width: 800px) {
+        body {
+          width: 100%;
+        
+          margin: 0px auto;
+        }
+        div img {
+          /* width: 80%;
+          margin: 0px auto;
+          justify-items: center;
+          justify-content: center; */
+        }
+      }
+    </style>
+  </head>
+  <body>
     <h1>Adopt images for different devices</h1>
-    
-</body>
+    <!-- <img
+      src="/assets/programmer-background pic.jpg"
+      alt="programmer background pic"
+    /> -->
+    <div>
+      <img
+        src="/assets/programmer-background pic.jpg"
+        alt=""
+        sizes="70%"
+        srcset=""
+      />
+    </div>
+  </body>
 </html>
