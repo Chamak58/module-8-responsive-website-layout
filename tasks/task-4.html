@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Layout</title>
+    <style>
+      body {
+        font-family: cursive;
+        margin: 0px auto;
+        width: 80%;
+      }
+      .food-1 {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 50px;
+        border: 1px solid rgba(28, 27, 27, 0.225);
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      .food-1 img {
+        width: 50%;
+      }
+      .food-1 div p {
+        text-align: justify;
+        line-height: 25px;
+      }
+      .food-2 div p {
+        text-align: justify;
+        line-height: 25px;
+      }
+      .food-2 img {
+        width: 50%;
+      }
+      .food-2 {
+        display: flex;
+        gap: 20px;
+        border: 1px solid rgba(28, 27, 27, 0.225);
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 50px;
+      }
+      @media screen and (max-width: 576px) {
+        .heading {
+          font-size: 26px;
+          text-align: justify;
+        }
+        .food-1 {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+        }
+        .food-1 img {
+          width: 100%;
+        }
+        .food-2 {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+        }
+        .food-2 img {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">Design Responsive Layout</h1>
+    <div class="food-1">
+      <img src="/assets/food-1.jpg" alt="healthy food" />
+      <div>
+        <h3>A plant-based diet is best</h3>
+        <p>
+          A plant-based diet is not only recommended to help reduce your cancer
+          risk; it also has benefits during cancer treatment. Be sure to ask
+          your doctor and dietitian if a plant-based diet is appropriate for
+          your specific situation. Plant-based means that most of the foods you
+          consume will come from plants. This includes fruits, vegetables, whole
+          grains, beans, seeds and nuts.
+        </p>
+        <button>Learn More</button>
+      </div>
+    </div>
+    <div class="food-2">
+      <img src="/assets/food-2.webp" alt="healthy food" />
+      <div>
+        <h3>Hydration is key during cancer treatment</h3>
+        <p>
+          If you’re undergoing cancer treatment, it’s important to maintain a
+          healthy diet. But you may be wondering which foods provide the most
+          nutrients or which foods will help ease the side effects from
+          treatment. We spoke with senior clinical dietitian Chelsea Ebrus, who
+          shared healthy foods to eat during cancer treatment.
+        </p>
+        <button>Learn More</button>
+      </div>
+    </div>
+  </body>
+</html>
