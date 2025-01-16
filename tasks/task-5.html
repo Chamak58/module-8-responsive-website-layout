@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Layout</title>
+    <style>
+      body {
+        font-family: cursive;
+        margin: 0px auto;
+        width: 90%;
+      }
+      .view-1 {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      .view-2 {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 50px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      .view-1 img {
+        width: 50%;
+      }
+      .view-1 div p {
+        text-align: justify;
+        line-height: 25px;
+      }
+      .view-2 div p {
+        text-align: justify;
+        line-height: 25px;
+      }
+      .view-2 img {
+        width: 50%;
+      }
+
+      @media screen and (max-width: 576px) {
+        body {
+          width: 100%;
+          margin: 0;
+        }
+        .heading {
+          font-size: 26px;
+          text-align: justify;
+        }
+        .view-1 {
+          flex-direction: column;
+        }
+        .view-1 img {
+          width: 100%;
+        }
+        .view-2 {
+          flex-direction: column-reverse;
+        }
+        .view-2 img {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Design Responsive Layout</h1>
+    <div class="view-1">
+      <img src="/assets/istockphoto-1746930591-612x612.webp" alt="" />
+      <div>
+        <h3 class="heading">World best view country</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquid
+          maxime officiis enim doloribus voluptatibus repellendus adipisci, qui
+          nisi, repudiandae fugiat odit ullam rem asperiores id quisquam magnam.
+          Quae perferendis quibusdam delectus dicta. Tempore nulla voluptate
+          fugit reiciendis eligendi eos nobis quaerat ea repudiandae commodi
+          corrupti, maxime a accusamus. Fugit.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+          exercitationem nisi odit itaque, dolore rerum ratione et dignissimos
+          omnis obcaecati reiciendis repellat, facilis asperiores unde, alias
+          perspiciatis architecto voluptatibus nemo!
+        </p>
+      </div>
+    </div>
+    <div class="view-2">
+      <div>
+        <h3 class="heading">World best view country</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquid
+          maxime officiis enim doloribus voluptatibus repellendus adipisci, qui
+          nisi, repudiandae fugiat odit ullam rem asperiores id quisquam magnam.
+          Quae perferendis quibusdam delectus dicta. Tempore nulla voluptate
+          fugit reiciendis eligendi eos nobis quaerat ea repudiandae commodi
+          corrupti, maxime a accusamus. Fugit.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+          exercitationem nisi odit itaque, dolore rerum ratione et dignissimos
+          omnis obcaecati reiciendis repellat, facilis asperiores unde, alias
+          perspiciatis architecto voluptatibus nemo!
+        </p>
+      </div>
+      <img src="/assets/view2.jpg" alt="" />
+    </div>
+  </body>
+</html>
